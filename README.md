@@ -74,7 +74,7 @@ Run this program using python3:
 ```
 $ python3 PlantLapse.py
 ```
-This will run so long as as terminal is open. It will stop once terminal is closed. You can make the program run in its own serpate independent sheel with this command:
+This will run so long as as terminal is open. It will stop once terminal is closed. You can make the program run in its own serpate independent shell with this command:
 
 ```
 $ nohup python3 PlantLapse.py &
