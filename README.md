@@ -16,6 +16,18 @@ $ sudo apt-get install update
 $ sudo apt-get install Gphoto2
 ```
 
+Once Gphoto2 is installed we need to make sure the files are stored to the memory card of the camera. We do this by typing in the following commands. 
+```
+$ gphoto2 --set-config capturetarget=1
+```
+To confirm run the following command:
+```
+$ gphoto2 --get-config capturetarget
+```
+Make sure the Capture Target is:
+```
+ Current:Memory Card
+```
 ## Python Program
 This Python Program uses GPIO and Gphoto2 which was adapted to work with python in this program. 
 This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because this is what this program is based on. He explains how to use Gphoto2 extensivly as well.
