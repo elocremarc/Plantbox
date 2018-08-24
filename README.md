@@ -5,7 +5,8 @@ This project is based on the Raspberry Pi. Its goal is to film the timescales of
 ## Gphoto2
 Gphoto2 is a Command Line interface for controlling many differnt camera models including most of Canon and Nikon through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
 http://gphoto.org/proj/libgphoto2/support.php 
-If you don't have Gphoto2 use the following commands:
+
+Install Gphoto2 with the following commands.
 ```
 $ sudo apt-get install update
 ```
