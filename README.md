@@ -69,4 +69,15 @@ https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ```
 $ python3 PlantLapse.py
 ```
-$ 
+This will run as long as terminal is open. You can make the program run after terminal is closed with this command:
+```
+$ nohup python3 PlantLapse.py &
+```
+Note: you must close the process down manually to stop the script. Find the python3 process with the following command:
+```
+$ ps -A | grep python3
+```
+You will get a number back followed by other characters. This is the command we must kill. Kill it with the kill command:
+```
+$ kill XXXX
+```
