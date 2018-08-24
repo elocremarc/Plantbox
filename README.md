@@ -22,7 +22,6 @@ This adaptaion was was created by the instructions in this YouTube video. I woul
 https://www.youtube.com/watch?v=1eAYxnSU2aw
 
 He also explains that you will also need some dependecies along with Gphoto2 for the python program to work. Install them with the following comands:
-Install pip:
 ```
 $ sudo apt-get install python3-pip
 ```
