@@ -87,7 +87,7 @@ You will get a number back followed by other characters:
 ```
 $ XXXX pts/0 00:00:03 python3 
 ```
-This number is the command we must kill. Kill it with the kill command:
+Use this number with the kill command to stop the PlantLapse.py:
 ```
 $ kill XXXX
 ```
