@@ -44,3 +44,7 @@ save_location = "/home/pi/Desktop/timelapse" + folder_name
 You can point the save location function to a HDD but you must first have the HDD mounted to a directory.
 Follow these instructions to mount a HDD to a directory: 
 https://www.raspberrypi.org/documentation/configuration/external-storage.md
+## Running The Program
+```
+$python3 PlantLapse.py
+```
