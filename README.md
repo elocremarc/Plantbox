@@ -16,8 +16,6 @@ $ sudo apt-get install update
 $ sudo apt-get install Gphoto2
 ```
 
-Once Gphoto2 is installed check what 
-
 ## Python Program
 This Python Program uses GPIO and Gphoto2 which was adapted to work with python in this program. 
 This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because this is what this program is based on. He explains how to use Gphoto2 extensivly as well.
