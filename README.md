@@ -36,7 +36,7 @@ To confirm run the following command:
 ```
 $ gphoto2 --get-config capturetarget
 ```
-Make sure the Capture Target is:
+Make sure the capture target is:
 ```
  Current:Memory Card
 ```
