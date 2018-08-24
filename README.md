@@ -75,6 +75,7 @@ Run this program using Python3:
 $ python3 PlantLapse.py
 ```
 This will run so long as as terminal is open. it will stop once terminal is closed. You can make the program run in its own serpate independent sheel with this command:
+
 ```
 $ nohup python3 PlantLapse.py &
 ```
@@ -82,11 +83,11 @@ Note: you must close the process down manually to stop the script. Find the pyth
 ```
 $ ps -A | grep python3
 ```
-You will get a number back followed by other characters 
+You will get a number back followed by other characters:
 ```
 $ XXXX pts/0 00:00:03 python3 
 ```
-This is the command we must kill. Kill it with the kill command:
+This number is the command we must kill. Kill it with the kill command:
 ```
 $ kill XXXX
 ```
