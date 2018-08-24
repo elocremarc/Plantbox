@@ -66,10 +66,15 @@ You can point the save location function to a HDD but you must first have the HD
 Follow these instructions to mount a HDD to a directory: 
 https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ## Running The Program
+cd into the path where the python program is located:
+```
+$ cd /Path/to/file/PlantLapse.py
+```
+Run this program using Python3:
 ```
 $ python3 PlantLapse.py
 ```
-This will run as long as terminal is open. You can make the program run after terminal is closed with this command:
+This will run so long as as terminal is open. it will stop once terminal is closed. You can make the program run in its own serpate independent sheel with this command:
 ```
 $ nohup python3 PlantLapse.py &
 ```
@@ -77,7 +82,11 @@ Note: you must close the process down manually to stop the script. Find the pyth
 ```
 $ ps -A | grep python3
 ```
-You will get a number back followed by other characters. This is the command we must kill. Kill it with the kill command:
+You will get a number back followed by other characters 
+```
+$ XXXX pts/0 00:00:03 python3 
+```
+This is the command we must kill. Kill it with the kill command:
 ```
 $ kill XXXX
 ```
