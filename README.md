@@ -7,21 +7,30 @@ Gphoto2 is a Command Line interface for controlling many differnt camera models 
 http://gphoto.org/proj/libgphoto2/support.php 
 
 Install Gphoto2 with the following commands.
+
+Update the Pi:
 ```
 $ sudo apt-get install update
-```
-```
-$ sudo apt-get install upgrade
 ```
 ```
 $ sudo apt-get install Gphoto2
 ```
 
+Once Gphoto2 is installed check what 
+
 ## Python Program
-This Python Program uses GPIO and Gphoto2 which  was adapted to work with python in this program. 
-This adaptaion was was created by the instructions in this YouTube video.
+This Python Program uses GPIO and Gphoto2 which was adapted to work with python in this program. 
+This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because this is what this program is based on. He explains how to use Gphoto2 extensivly as well.
 https://www.youtube.com/watch?v=1eAYxnSU2aw
 
+He also explains that you will also need some dependecies along with Gphoto2 for the python program to work. Install them with the following comands:
+Install pip:
+```
+$ sudo apt-get install python3-pip
+```
+```
+$ sudo pip3 install sh
+```
 Other than the fucntions achived in the video this program also triggers 
 a 2 channel relay with GPIO pins in order to control both studio lighting as well as a grow light. 
 The grow light turns off during the photo while the studio light is turned on. The grow light also will only shine during the day. 
