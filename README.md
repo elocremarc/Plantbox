@@ -1,7 +1,8 @@
 # Plantbox
 ## Plant Box Project:
-This project is based on the Raspberry Pi. Its goal is to film the timescales of life. This is done through the timelapsing of plants. This project is intended to create a "Plant Box" where a plant will grow for the sole purpose of being photographed. This Plant Box will have studio lights as well as grow lights to sustain the growth. This box will also trigger and download images from any camera. The goal of this is to fully automate the proces to elimiate any human interaction during the entire growth of the plant cycle. Plants, especially flowers need sleep therefore it is important that a plant gets light only half the day. This means that a grow light must be controlled to turn on only half the day. These grow lights typically are purple and have nasty coloring for photography. Therefore its important that this light be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off. 
+Purpose: This project is based on the Raspberry Pi. Its goal is to film the timescales of life. This is done through the timelapsing of plants. The project is intended to create a "Plant Box" an issolated place where a plant will grow for the sole purpose of being photographed. This "Plant Box" will have controller to manage studio lights as well as grow lights to sustain the growth. The controller will also trigger and download images from any camera to a HDD. The goal of this is to fully automate the proces and elimiate any human interaction during the entire growth of the plant cycle. Plants, especially flowers need sleep therefore it is important that a plant receive light only half the day. Therefore the grow light must be controlled to be on only half the day. These grow lights typically are purple and have nasty coloring for photography. Therefore its important that this light also be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off.
 
+# Guide
 ## Gphoto2
 Gphoto2 is a Command Line interface for controlling many differnt camera models through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
 http://gphoto.org/proj/libgphoto2/support.php 
@@ -66,5 +67,5 @@ Follow these instructions to mount a HDD to a directory:
 https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ## Running The Program
 ```
-$python3 PlantLapse.py
+$ python3 PlantLapse.py
 ```
