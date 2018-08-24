@@ -42,25 +42,24 @@ Make sure the capture target is:
 ```
 ## Python Program
 This Python Program uses GPIO and Gphoto2 which was adapted to work with python in this program. 
-This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because this is what this program is based on. He explains how to use Gphoto2 extensivly as well.
+This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because is what the program is based on. He explains how to use Gphoto2 extensivly as well.
 https://www.youtube.com/watch?v=1eAYxnSU2aw
 
-He also explains that you will also need some dependecies along with Gphoto2 for the python program to work. Install them with the following comands:
+You will also need some dependecies along with Gphoto2 for the python program to work. Install them with the following comands:
 ```
 $ sudo apt-get install python3-pip
 ```
 ```
 $ sudo pip3 install sh
 ```
-Other than the fucntions achived in the video this program also triggers 
-a 2 channel relay with GPIO pins in order to control both studio lighting as well as a grow light. 
-The grow light turns off during the photo while the studio light is turned on. The grow light also will only shine during the day. 
+Other than the fucntions achived in the video this program also triggers a 2 channel relay to control both studio light and a grow light. The grow light turns off during the image cpature while the studio light is turned on. The grow light also will only shine during the day. 
 
 ## Wiring
-Along with connecting the camera to the USB on the Pi a 2 channel relay must also be connected to 2 GPIO pins on the Pi. These control another higher voltage circuit than the raspbery Pi's 5volt. You can use this to control 12 Volt LED strips for both studio lights and grow lights. These are symbolized as LED's on the following diagram.
+Along with connecting the camera to the USB on the Pi a 2 channel relay must also be connected to 2 GPIO pins on the Pi. These control a  higher voltage circuit for instance a 12 volt LED strip. 12 volt LED strips work great because you can get them for both Daylight and GrowLight. These "Lights" are symbolized as LED's on the following schematic. Output side of the relay is where you would need to the appropriate 12 volt power supply to power your LED strip setup. 
 
 ![alt text](https://github.com/elocremarc/Plantbox/blob/master/2%20Channel%20Relay%20Raspberry%20Pi.jpg)
-Pins 2 & 3 on the Pi are the pins that we will used to control the relay. They connect to the relay board along with the 5Volt VCC and the Ground of the Rasperry Pi. This can be used to control Mains power or a safer option if your not electrically confident is using 12Volt LEDs they have LED strips for both Daylight and GrowLight
+
+Pins 2 & 3 on the Pi are the pins that we will used to control the relay. They connect to the relay board along with the 5 Volt VCC pin and the Ground Pin of the Rasperry Pi. This can be used to control Mains power or a safer option is using 12Volt LEDs
 
 ## File Storage Location
 Currently the python program is saving files to the desktop of the raspbery pi in a folder named timelapse.
