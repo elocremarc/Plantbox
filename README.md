@@ -12,6 +12,7 @@ Update the Pi:
 ```
 $ sudo apt-get install update
 ```
+Install Gphoto2:
 ```
 $ sudo apt-get install Gphoto2
 ```
