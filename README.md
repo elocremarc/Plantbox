@@ -1,6 +1,6 @@
 # Plantbox
 ## Plant Box Project:
-This Project is to film the timescales of life. This is done through timelapsing of plants. Plants, especially flowers need sleep therefore it is important that a plant gets light only half the day. This means that a grow light must be controlled to turn on only half the day. These grow lights typically are purple and have gross coloring for photography. Therefore its important that this light be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off.
+This Project is to film the timescales of life. This is done through the timelapsing of plants. Plants, especially flowers need sleep therefore it is important that a plant gets light only half the day. This means that a grow light must be controlled to turn on only half the day. These grow lights typically are purple and have gross coloring for photography. Therefore its important that this light be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off.
 
 ## Gphoto2
 Gphoto2 is a Command Line interface for controlling many differnt camera models including most of Canons through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
