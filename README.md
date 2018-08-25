@@ -4,7 +4,11 @@ Purpose: This project is based on the Raspberry Pi. Its goal is to film the time
 
 # Guide
 ## Installing This App
-Open Terminal and cd into the directory where you want to install this repository. Make sure your have Git.
+Make sure your have Git installed.
+```
+$ sudo apt-get install git
+```
+Open Terminal and cd into the directory where you want to install this repository. 
 ```
 $ cd~/
 ```
