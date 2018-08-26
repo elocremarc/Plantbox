@@ -112,7 +112,7 @@ $ sudo mkdir /home/pi/Desktop/timelapse
 save_location = "/home/pi/Desktop/timelapse" + folder_name
 ```
 ### Optional
-If you want basically unlimited storage a HDD is a good option. As long as your HDD is mounted to a directory you can spcify this directory in the save_location fuctnion like above. If you need instructions on Mouting your HDD to a directory follow these instructions: https://www.raspberrypi.org/documentation/configuration/external-storage.md
+If you want basically unlimited storage a HDD is a good option. As long as your HDD is mounted to a directory you can specify this directory in the save_location fuctnion like above. If you need instructions on Mouting your HDD to a directory follow these instructions: https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ## Running The Program
 The program can be run directly through command line.
 cd into the path where the python program is located:
