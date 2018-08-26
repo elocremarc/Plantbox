@@ -1,6 +1,6 @@
 # Plantbox
 ## Plant Box Project:
-The goal of this project is to is to film the timescales of life. This is done through the timelapsing of plants using the Raspberry Pi. The project is intended to create a "Plant Box" an issolated place where a plant will grow for the sole purpose of being photographed. This "Plant Box" will have a controller to manage studio lights as well as grow lights to sustain the growth. The controller will also trigger and download images from any camera to an external HDD. The goal of this is to fully automate the process and eliminate any human interaction during the entire growth of the plant cycle.
+The goal of this project is to film the timescales of life. This is done through the timelapsing of plants using the Raspberry Pi. The project is intended to create a "Plant Box" an issolated place where a plant will grow for the sole purpose of being photographed. This "Plant Box" will have a controller to manage studio lights as well as grow lights to sustain the growth. The controller will also trigger and download images from any camera to an external HDD. The goal of this is to fully automate the process and eliminate any human interaction during the entire growth of the plant cycle.
 
 # Items Needed
 
