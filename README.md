@@ -35,7 +35,7 @@ $ sudo raspi-config
 ```
 Once you find your ip adress and enable SSH you can unplug the Pi's keyboard mouse and monitor becuse the rest will be dont through SSH. Open up Terminal in Mac/Linux and Command Prompt for Windows and start a new SSH session typing the following command. 
 ```
-$ SSH pi@ip.address.of.your.pi
+$ ssh pi@ip.address.of.your.pi
 ```
 You will then answer "yes" to start a new SSH session with your remote Raspberry Pi. It will ask you to enter a password if you haven't changed the password it should be "raspberry"
 ```
