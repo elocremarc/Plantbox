@@ -43,7 +43,7 @@ Password:raspberry
 ```
 You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to get started!
 
-Make sure your have Git installed.
+Make sure your install Git.
 ```
 $ sudo apt-get install git
 ```
