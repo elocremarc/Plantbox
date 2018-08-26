@@ -40,7 +40,7 @@ $ SSH pi@ip.address.of.your.pi
 You will then answer "yes" to start a new SSH session with your remote Raspberry Pi. It will ask you to enter a password if you haven't changed the password it should be "raspberry"
 ```
 Password:raspberry
-
+```
 You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to get started!
 
 Make sure your have Git installed.
