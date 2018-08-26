@@ -14,21 +14,45 @@ You will need the following items in order to create your own plant box.
 - 1 x 12 Volt Daylight LED strip
 - 1 x 12 Volt Growlight LED strip
 - 1 x 12 Volt LED power Supply
+- 1 x "Plant Box" a quite dark place where a plant can grow undisturbed. 
 
 # Guide
 ## Installing This App
+### Fresh Rasberry Pi 
+You need to have a raspberry Pi with the latest version of Rasbian/Noobs up and running before you begin this guide. If you haven't done so already follow the offical guide to get up and running. 
+https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
+### SSH into Your Pi.
+If you have your Raspberry Pi up and running with a keyboard and mouse and monitor your can ditch these and finish the rest of the project using SSH on your persoanl computer. Make sure it is connected to your local wifi network first. Open terminal so you can find the IP address of your raspberry pi using the following command.
+```
+$ ifconfig
+```
+Once you find your ip adress you can open up Terminal in Mac/Linux and Command Prompt for Windows and start a SSH session typing the following command. 
+```
+$ SSH pi@ip.address.of.your.pi
+```
+You will then answer "yes" to start a new SSH session with your remote Raspberry Pi. It will ask you to enter a password if you haven't changed the password it should be "raspberry"
+```
+Password:raspberry
+```
+It is highly recommended that you change the password to the Pi immediately. Change the password inside of raspi-config.
+```
+$ sudo rasp-config
+```
+You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to install this app.
+
 Make sure your have Git installed.
 ```
 $ sudo apt-get install git
 ```
 Open Terminal and cd into the directory where you want to install this repository. 
 ```
-$ cd~/
+$ cd~/Directory/Where/You/Want/This/Repository
 ```
 Install Plantbox repository:
 ```
 $ git clone https://github.com/elocremarc/Plantbox
 ```
+You will need some addional programs and python packages in order for the python program to function properly.
 
 ## Gphoto2
 Gphoto2 is a Command Line interface for controlling many differnt camera models through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
