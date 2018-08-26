@@ -107,12 +107,17 @@ create this folder with the following commands:
 ```
 $ sudo mkdir /home/pi/Desktop/timelapse
 ```
- To change the location change the save path in the save_location function in the python program
+ To change the location change the save path in the save_location function in the python program. Make sure you are in the directory with the PlantLapse.py program if not cd into it. Now you must edit this program. Type the following command.
+```
+$ sudo nano PlantLapse.py
+```
+Once you are in the nano text editor find the "save_location" fucntion and change the path where you want the timelapse to be stored.
 ```
 save_location = "/home/pi/Desktop/timelapse" + folder_name
 ```
+Save changes and close nano.
 ### Optional
-If you want basically unlimited storage a HDD is a good option. As long as your HDD is mounted to a directory you can specify this directory in the save_location fuctnion like above. If you need instructions on Mouting your HDD to a directory follow these instructions: https://www.raspberrypi.org/documentation/configuration/external-storage.md
+If you want basically unlimited storage a HDD is a good option. As long as your HDD is mounted to a directory you can specify this directory in the save_location fuctnion like above. If you need instructions on mouting your HDD to a directory follow this offical guide: https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ## Running The Program
 The program can be run directly through command line.
 cd into the path where the python program is located:
@@ -140,3 +145,5 @@ Use this number with the kill command to stop the PlantLapse.py:
 ```
 $ kill XXXX
 ```
+### Troubleshooting
+This was made using a cannon 60D you might not 
