@@ -5,15 +5,15 @@ The goal of this project is to is to film the timescales of life. This is done t
 # Items Needed
 
 You will need the following items in order to create your own plant box.
-1 x Raspberry Pi (any model)
-1 x Micro SD with Rasbian Installed
-1 x Keyboard/Mouse & Monitor (only needed to connect to the network)
-1 x Raspberry Pi Power supply
-1 x 2 Channel Relay Module
-4 X Jumper cables to connect the relay to the Pi
-1 x 12 Volt Daylight LED strip
-1 x 12 Volt Growlight LED strip
-1 x 12 Volt LED power Supply
+*1 x Raspberry Pi (any model)
+*1 x Micro SD with Rasbian Installed
+*1 x Keyboard/Mouse & Monitor (only needed to connect to the network)
+*1 x Raspberry Pi Power supply
+*1 x 2 Channel Relay Module
+*4 X Jumper cables to connect the relay to the Pi
+*1 x 12 Volt Daylight LED strip
+*1 x 12 Volt Growlight LED strip
+*1 x 12 Volt LED power Supply
 
 # Guide
 ## Installing This App
