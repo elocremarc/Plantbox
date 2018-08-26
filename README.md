@@ -27,7 +27,9 @@ It is way easier to control your Pi from your personal computer using SSH. Make 
 ```
 $ ifconfig
 ```
-If you are connected with ethernet your ip addess should be under eth0 if you are connected with wifi your ip address will be under wlan0. Write down this number you will need this to control your Pi from your Desktop comptuer. You must enable SSH on your Raspberry pi. Change this with raspi-config. Under "Interfaceing options"
+If you are connected with ethernet your ip addess should be under eth0 if you are connected with wifi your ip address will be under wlan0. Write down this number you will need this to control your Pi from your Desktop comptuer. 
+
+You must enable SSH on your Raspberry pi. Change this with raspi-config. Under "Interfaceing options"
 ```
 $ sudo raspi-config
 ```
