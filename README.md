@@ -38,7 +38,7 @@ It is highly recommended that you change the password immediately. You can chang
 ```
 $ sudo raspi-config
 ```
-You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to install to get going.
+You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to get started!
 
 Make sure your have Git installed.
 ```
