@@ -22,7 +22,7 @@ You will need the following items in order to create your own plant box.
 You need to have a raspberry Pi with the latest version of Rasbian/Noobs up and running before you begin this guide. If you haven't done so already follow the offical guide to get up and running. 
 https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
 ### SSH into Your Pi.
-If you have your Raspberry Pi up and running with a keyboard and mouse and monitor your can ditch these and finish the rest of the project using SSH on your persoanl computer. Make sure it is connected to your local wifi network first. Open terminal so you can find the IP address of your raspberry pi using the following command.
+If you have your Raspberry Pi up and running with a keyboard and mouse and monitor your can ditch these and finish the rest of the project using SSH on your personal computer. Make sure it is connected to your local wifi network first. Open terminal so you can find the IP address of your raspberry pi using the following command.
 ```
 $ ifconfig
 ```
