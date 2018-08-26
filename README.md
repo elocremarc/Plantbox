@@ -27,18 +27,18 @@ It is way easier to controll your Pi from your personal Computer using SSH. Make
 ```
 $ ifconfig
 ```
-Once you find your ip adress you can unplug the Pi's keyboard mouse and monitor becuse the rest will be dont through SSH. Open up Terminal in Mac/Linux and Command Prompt for Windows and start a new SSH session typing the following command. 
+Write down this number you will need this to control your Pi from your Desktop comptuer. You must enable SSH on your raspberry pi. Change this with raspi-config.
+```
+$ sudo raspi-config
+```
+Once you find your ip adress and enable SSH you can unplug the Pi's keyboard mouse and monitor becuse the rest will be dont through SSH. Open up Terminal in Mac/Linux and Command Prompt for Windows and start a new SSH session typing the following command. 
 ```
 $ SSH pi@ip.address.of.your.pi
 ```
 You will then answer "yes" to start a new SSH session with your remote Raspberry Pi. It will ask you to enter a password if you haven't changed the password it should be "raspberry"
 ```
 Password:raspberry
-```
-It is highly recommended that you change the password immediately. You can change it with raspi-config.
-```
-$ sudo raspi-config
-```
+
 You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to get started!
 
 Make sure your have Git installed.
