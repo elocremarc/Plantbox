@@ -147,4 +147,4 @@ Use this number with the kill command to stop the PlantLapse.py:
 $ kill XXXX
 ```
 ### Troubleshooting
-This was made using a cannon 60D you might not 
+This was made using a cannon 60D you might not have a cannon camera. Therefore 
