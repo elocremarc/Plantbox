@@ -1,6 +1,19 @@
 # Plantbox
 ## Plant Box Project:
-Purpose: This project is based on the Raspberry Pi. Its goal is to film the timescales of life. This is done through the timelapsing of plants. The project is intended to create a "Plant Box" an issolated place where a plant will grow for the sole purpose of being photographed. This "Plant Box" will have a controller to manage studio lights as well as grow lights to sustain the growth. The controller will also trigger and download images from any camera to a HDD. The goal of this is to fully automate the process and elimiate any human interaction during the entire growth of the plant cycle. Plants, especially flowers need sleep therefore it is important that a plant receive light only half the day. Therefore the grow light must be controlled to be on only half the day. These grow lights typically are purple and have nasty coloring for photography. Therefore its important that this light also be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off.
+The goal of this project is to is to film the timescales of life. This is done through the timelapsing of plants using the Raspberry Pi. The project is intended to create a "Plant Box" an issolated place where a plant will grow for the sole purpose of being photographed. This "Plant Box" will have a controller to manage studio lights as well as grow lights to sustain the growth. The controller will also trigger and download images from any camera to an external HDD. The goal of this is to fully automate the process and eliminate any human interaction during the entire growth of the plant cycle. Plants, especially flowers need sleep therefore it is important that a plant receive light only half the day. To achive this the grow light must be controlled to be on only half the day. These grow lights typically are purple and have nasty coloring for photography. Its also important that this light also be turned off whilst the photo is being taken. To light up the scene a second light is needed while the grow light is off.
+
+# Items Needed
+
+You will need the following items in order to create your own plant box.
+1 x Raspberry Pi (any model)
+1 x Micro SD with Rasbian Installed
+1 x Keyboard/Mouse & Monitor (only needed to connect to the network)
+1 x Raspberry Pi Power supply
+1 x 2 Channel Relay Module
+4 X Jumper cables to connect the relay to the Pi
+1 x 12 Volt Daylight LED strip
+1 x 12 Volt Growlight LED strip
+1 x 12 Volt LED power Supply
 
 # Guide
 ## Installing This App
