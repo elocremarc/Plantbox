@@ -34,11 +34,11 @@ You will then answer "yes" to start a new SSH session with your remote Raspberry
 ```
 Password:raspberry
 ```
-It is highly recommended that you change the password to the Pi immediately. Change the password inside of raspi-config.
+It is highly recommended that you change the password immediately. You can change it with raspi-config.
 ```
-$ sudo rasp-config
+$ sudo raspi-config
 ```
-You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to install this app.
+You might need to reconnect to your SSH session after you change your password. Once you are connected to your Raspberry Pi with a SSH connection you are ready to install to get going.
 
 Make sure your have Git installed.
 ```
@@ -48,14 +48,14 @@ Open Terminal and cd into the directory where you want to install this repositor
 ```
 $ cd~/Directory/Where/You/Want/This/Repository
 ```
-Install Plantbox repository:
+Install the Plantbox repository:
 ```
 $ git clone https://github.com/elocremarc/Plantbox
 ```
-You will need some addional programs and python packages in order for the python program to function properly.
+You will also need some addional programs and python packages.
 
 ## Gphoto2
-Gphoto2 is a Command Line interface for controlling many differnt camera models through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
+Gphoto2 is a command line interface for controlling many differnt camera models through a USB connection. This project was developed on the 60D so be sure to look at the Gphoto2 documentaion to see if your camera is supported.
 http://gphoto.org/proj/libgphoto2/support.php 
 
 Install Gphoto2 with the following commands.
@@ -68,12 +68,11 @@ Install Gphoto2:
 ```
 $ sudo apt-get install Gphoto2
 ```
-
 Once Gphoto2 is installed we need to make sure the files are stored to the memory card of the camera. We do this by typing in the following commands. 
 ```
 $ gphoto2 --set-config capturetarget=1
 ```
-To confirm run the following command:
+To confirm this run the following command:
 ```
 $ gphoto2 --get-config capturetarget
 ```
@@ -82,8 +81,8 @@ Make sure the capture target is:
  Current:Memory Card
 ```
 ## Python Program
-This Python Program uses GPIO and Gphoto2 which was adapted to work with python in this program. 
-This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video because is what the program is based on. He explains how to use Gphoto2 extensivly as well.
+This Python Program uses Gphoto2 which was adapted to work with python in this program. 
+This adaptaion was was created by the instructions in this YouTube video. I would recomend watching that video.. He explains how to use Gphoto2 extensivly as well how this program mainly functions.
 https://www.youtube.com/watch?v=1eAYxnSU2aw
 
 You will also need some dependecies along with Gphoto2 for the python program to work. Install them with the following comands:
@@ -93,7 +92,7 @@ $ sudo apt-get install python3-pip
 ```
 $ sudo pip3 install sh
 ```
-Other than the fucntions achived in the video this program also triggers a 2 channel relay to control both studio light and a grow light. The grow light turns off during the image cpature while the studio light is turned on. The grow light also will only shine during the day. 
+Other than the functions achived in the video above, this program also triggers a 2 channel relay to control both studio light and a grow light using GPIO. The lights need to be controlled so that the grow light is off during the image capture while the studio light is turned on. The control also needs to make sure the grow light only shines during the day. 
 
 ## Wiring
 Along with connecting the camera to the USB on the Pi a 2 channel relay must also be connected to 2 GPIO pins on the Pi. These control a  higher voltage circuit for instance a 12 volt LED strip. 12 volt LED strips work great because you can get them for both Daylight and GrowLight. These "Lights" are symbolized as LED's on the following schematic. Output side of the relay is where you would need to the appropriate 12 volt power supply to power your LED strip setup. 
@@ -108,14 +107,14 @@ create this folder with the following commands:
 ```
 $ sudo mkdir /home/pi/Desktop/timelapse
 ```
- change this location by changing the save path in the save location function in the python program
+ To change the location change the save path in the save_location function in the python program
 ```
 save_location = "/home/pi/Desktop/timelapse" + folder_name
 ```
-You can point the save location function to a HDD but you must first have the HDD mounted to a directory.
-Follow these instructions to mount a HDD to a directory: 
-https://www.raspberrypi.org/documentation/configuration/external-storage.md
+### Optional
+If you want basically unlimited storage a HDD is a good option. As long as your HDD is mounted to a directory you can spcify this directory in the save_location fuctnion like above. If you need instructions on Mouting your HDD to a directory follow these instructions: https://www.raspberrypi.org/documentation/configuration/external-storage.md
 ## Running The Program
+The program can be run directly through command line.
 cd into the path where the python program is located:
 ```
 $ cd /Path/to/file/PlantLapse.py
@@ -124,7 +123,7 @@ Run this program using python3:
 ```
 $ python3 PlantLapse.py
 ```
-This will run so long as as terminal is open. It will stop once terminal is closed. You can make the program run in its own serpate independent shell with this command:
+This will run so long as as terminal/ssh is open. It will stop once terminal/ssh is closed. You can make the program run in its own serpate independent shell with the noup command :
 
 ```
 $ nohup python3 PlantLapse.py &
