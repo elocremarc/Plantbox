@@ -14,6 +14,7 @@ You will need the following items in order to create your own plant box.
 - 1 x 12 Volt Daylight LED strip
 - 1 x 12 Volt Growlight LED strip
 - 1 x 12 Volt LED power Supply
+- 1 x External HDD (optional)
 - 1 x "Plant Box" a quite dark place where a plant can grow undisturbed. 
 
 # Guide
