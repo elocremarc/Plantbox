@@ -149,4 +149,11 @@ Use this number with the kill command to stop the PlantLapse.py:
 $ sudo kill XXXX
 ```
 ### Troubleshooting
-This was made using a cannon 60D you might not have a cannon camera. Therefore 
+This was made using a cannon 60D you might not have a cannon camera. Therefore you might have to change the Clear Command in the python program to a different file extension for Gphoto2 to clear off the photos properly.
+```
+clearCommand = ["--folder", "/store_00020001/DCIM/100CANON",\ 
+```
+To find out the file structure your camera uses type in the following command to display the extions you must copy into the clearCommand above
+```
+$gphoto2 --get-config capturetarget
+```
