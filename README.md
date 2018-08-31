@@ -153,7 +153,8 @@ This was made using a cannon 60D you might not have a cannon camera. Therefore y
 ```
 clearCommand = ["--folder", "/store_00020001/DCIM/100CANON",\ 
 ```
-To find out the file structure your camera uses type in the following command to display the extions you must copy into the clearCommand above
+To find out the file structure your camera uses type in the following command: 
 ```
 $gphoto2 --get-config capturetarget
 ```
+Copy the file extsion you see into the clear command in the Python program. 
