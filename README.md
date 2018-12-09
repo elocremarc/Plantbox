@@ -69,7 +69,7 @@ $ sudo apt-get install update
 ```
 Install Gphoto2:
 ```
-$ sudo apt-get install Gphoto2
+$ sudo apt-get install gphoto2
 ```
 Once Gphoto2 is installed we need to make sure the files are stored to the memory card of the camera. We do this by typing in the following commands. 
 ```
