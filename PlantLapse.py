@@ -24,6 +24,12 @@ GPIO.setup(growpin, GPIO.OUT)
 GPIO.setup(studiopin, GPIO.OUT)
 daytime = 1
 
+shot_date = datetime.datetime.now().strftime("%Y-%m-%d")
+shot_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+#This is where you specify the name of the timelapse for filenaming
+picID = "PlantShots"
+
 # Kill gphoto2 process that
 # starts whenever we connect the
 # camera
@@ -40,11 +46,6 @@ def killgphoto2Process():
             pid = int(line.split(None,1)[0])
             os.kill(pid, signal.SIGKILL)
 
-shot_date = datetime.datetime.now().strftime("%Y-%m-%d")
-shot_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-#This is where you specify the name of the timelapse for filenaming
-picID = "PlantShots"
 
 # This will clear the files off the SD card
 #	Note: "/store_00020001/DCIM/100CANON" might be difffernt based on your camera'''
@@ -151,7 +152,7 @@ while True:
 	#Set the Timelapse Interval
 
     interval = 52
-    sleep(interval)
+   sleep(interval)
 
 	#Clean up GPIO
     GPIO.cleanup()
