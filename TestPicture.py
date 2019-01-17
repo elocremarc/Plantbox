@@ -5,8 +5,11 @@ import time
 import os
 import shutil
 
+Directory = "/home/pi"
+
 # Remove Residual Capture1 & Capture2 from folder that coud hang the Gphoto2 bash script
 def cleanFolder ():
+	os.chdir(Directory)
         if os.path.exists("test1.jpg"):
                 os.remove("test1.jpg")
         if os.path.exists("test2.cr2"):
@@ -15,7 +18,7 @@ def cleanFolder ():
 # Move to working directory, Using gphoto2, Capture Image, Download, Rename jpg file to Capture 1 & the raw file to Capture 2	
 def gphotoCapture ():
         os.system("cd /home/pi && gphoto2 --capture-image-and-download --filename test%n.%C")
-        os.chdir("/home/pi")
+        os.chdir(Directory)
         shutil.copy("test1.jpg",  "/var/www/html")
 
 
