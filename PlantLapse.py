@@ -1,3 +1,5 @@
+#!user/bin/python
+
 '''This Python Program is based on Gphoto2 which controls many types of camera models 
 via USB. Gphoto2 runs via the command line, it was adapted to work with python here. 
 this program also triggers a 2 channel relay in order to control both studio lighting as well as a grow light 
@@ -26,7 +28,7 @@ GPIO.setup(studiopin, GPIO.OUT)
  
 
 #This is where you specify the name of the project for filenaming
-picID = "PlantShots"
+picID = " PlantShots"
 
 shot_date = datetime.datetime.now().strftime("%Y-%m-%d")
 shot_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -49,10 +51,10 @@ def renameFiles(ID):
     for filename in os.listdir("."):
         if len(filename) < 13:
             if filename.endswith(".jpg"):
-                os.rename(filename, (shot_time + ID + ".JPG"))
+                os.rename(filename, (shot_time + " " + ID + ".JPG"))
                 print("Renamed the JPG")
             if filename.endswith(".cr2"):
-                os.rename(filename, (shot_time + ID + ".CR2"))
+                os.rename(filename, (shot_time + " " + ID + ".CR2"))
                 print("Renamed the cr2")
 
 # Combine functions in order of operation to take a picture onto the pi  				
@@ -69,7 +71,7 @@ def suncheck():
     if now.hour > 7 and now.hour < 17:
         daytime = True;
         print("daytime")
-    else:
+user/bin/python^M: bad interpreter: No such file or directory    else:
         daytime = False;
         print("nighttime")
 		
