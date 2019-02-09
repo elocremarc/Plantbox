@@ -1,3 +1,4 @@
+#!/user/bin/env python3
 
 '''This Python program will capture an image with gphoto2 and rename it to test. It will then delete the previous one on the directory This is usefull for taking a test photo to check exposure and compostion when setting the exposure with gphoto2'''
 
