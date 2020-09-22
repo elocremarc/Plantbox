@@ -17,28 +17,41 @@ from sh import gphoto2 as gp
 import signal, os, subprocess
 
 
-growpin = 20
-studiopin = 21
-interval = 450 #Set the Timelapse Interval
+growpin = 20 #GPIO Pin 20
+studiopin = 21 #GPIO Pin 21
 counter = 1
+interval = 225 # 450 #Set the Timelapse Interval
 dir = "/home/pi/HDD/"
+picID = "Test123" #Project Name
+save_location = dir + picID +"/"
+
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(growpin, GPIO.OUT)
 GPIO.setup(studiopin, GPIO.OUT)
 
-#This is where you specify the name of the project for filenaming
-picID = "Thai_420"
 
 shot_date = datetime.datetime.now().strftime("%Y-%m-%d")
 shot_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+# Mount Drive
+def Mount():
+	os.system("mount " + dir )
+
+
+#Create Save Folder fucntion
+def createSaveFolder():
+    try:
+        os.makedirs(save_location)
+    except:
+        print("Directory Already Exists")
+        os.chdir(save_location)
 
 
 # Remove Residual Capture1 & Capture2 from folder that coud hang the Gphoto2 bash script
 def cleanFolder ():
-	os.chdir(dir)
+	os.chdir(save_location)
 	if os.path.exists("capture1.jpg"):
 		os.remove("capture1.jpg")
 	if os.path.exists("capture2.cr2"):
@@ -46,7 +59,7 @@ def cleanFolder ():
 
 # Move to working directory, Using gphoto2, Capture Image, Download, Rename jpg file to Capture 1 & the raw file to Capture 2	
 def gphotoCapture ():
-	os.system("gphoto2 --capture-image-and-download --filename " + dir + "capture%n.%C")
+	os.system("gphoto2 --capture-image-and-download --filename " + save_location + "capture%n.%C")
 
 # Rename Files with Timestamp and Project name
 def renameFiles(ID):
@@ -61,6 +74,8 @@ def renameFiles(ID):
 
 # Combine functions in order of operation to take a picture onto the pi
 def CaptureImage ():
+	Mount()
+	createSaveFolder()
 	cleanFolder()
 	gphotoCapture()
 	renameFiles(picID)

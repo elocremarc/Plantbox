@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+from time import sleep
+import RPi.GPIO as GPIO
+
+while True:
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
+
+    GPIO.setup(20, GPIO.OUT)
+    GPIO.output(20, GPIO.HIGH)
+    print("GPIO 20 =",GPIO.input(20))  # returns 1
+
+    sleep(4)
+    GPIO.setup(20, GPIO.OUT)
+    GPIO.output(20, GPIO.LOW)
+    print ("GPIO 20 =",GPIO.input(20))  # returns 0

@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+import signal, os, subprocess
+
+# Kill python3 process
+
+
+def stopProcess():
+    p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+    out, err = p.communicate()
+
+    # Search for the line that has the process
+    # we want to kill
+    for line in out.splitlines():
+        if b'python3' in line:
+            # Kill the process!
+            pid = int(line.split(None,1)[0])
+            os.kill(pid, signal.SIGKILL)
+
+stopProcess()
