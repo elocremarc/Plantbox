@@ -101,6 +101,7 @@ Other than the functions achived in the video above, this program also triggers 
 Along with connecting the camera to the USB on the Pi a 2 channel relay must also be connected to 2 GPIO pins on the Pi. These control a  higher voltage circuit for instance a 12 volt LED strip. 12 volt LED strips work great because you can get them for both Daylight and GrowLight. These "Lights" are symbolized as LED's on the following schematic. Output side of the relay is where you would need to the appropriate 12 volt power supply to power your LED strip setup. 
 
 ![alt text](https://github.com/elocremarc/Plantbox/blob/master/2%20Channel%20Relay%20Raspberry%20Pi.jpg)
+![alt text](https://github.com/elocremarc/Plantbox/blob/master/Controller.jpg)
 
 Pins 2 & 3 on the Pi are the pins that we will used to control the relay. They connect to the relay board along with the 5 Volt VCC pin and the Ground Pin of the Rasperry Pi. This can be used to control Mains power or a safer option is using 12Volt LEDs
 
