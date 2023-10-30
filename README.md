@@ -130,12 +130,12 @@ $ cd /Path/to/file/PlantLapse.py
 ```
 Run this program using python3:
 ```
-$ python3 PlantLapse.py
+$ python3 Plant.py
 ```
 This will run so long as as terminal/ssh is open. It will stop once terminal/ssh is closed. You can make the program run in its own serpate independent shell with the noup command :
 
 ```
-$ nohup python3 PlantLapse.py &
+$ nohup python3 Plant.py &
 ```
 Note: you must close the process down manually to stop the script. Find the python3 process with the following command:
 ```
